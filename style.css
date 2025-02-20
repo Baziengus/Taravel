@@ -153,18 +153,21 @@ nav a:hover, nav a.active {
     visibility: visible;
   }
 
-  nav {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      width: 40%;
-      border-left: 3px solid pink;
-      border-bottom: 3px solid pink;
-      border-top-left-radius: 2rem;
-      padding: 1rem;
-      background-color: pink;
-      border-top: 0.1rem solid pink;
-  }
+  .navbar {
+    position: fixed; /* Sticks it at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Makes it span the full width */
+    background: linear-gradient(to right, #4A6FA5, #A3C1E5); /* Example gradient */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    z-index: 1000; /* Ensures it stays on top */
+    line-height: 50px;
+    height: 75px;
+    }
+
   nav.active {
       display: block;
   }
@@ -178,7 +181,7 @@ nav a:hover, nav a.active {
   nav a:hover, nav a.active {
       padding: 1rem;
       border-radius: 0.5rem;
-      border-bottom: 0.5rem solid rgb(230, 15, 234);
+      border-bottom: 0.5rem solid rgb(255, 255, 255);
   }
 }
 
