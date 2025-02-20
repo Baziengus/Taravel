@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> TARAvel </title>
+    <link rel="icon" type="image/x-icon" href="pictures/trace.svg">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="#"> Home </a>
+        <a href="#"> About </a>
+        <a href="#footer"> Contacts </a> <!-- Updated link -->
+        <div class="nav-item">
+            Booking types <span class="arrow">▼</span>
+            <ul class="dropdown">
+                <a href="booking links/Car.html" target="_blank" rel="noopener noreferrer"><li> Car Booking </li></a>
+                <a href="booking links/motor.html" target="_blank" rel="noopener noreferrer"><li> Motor Booking </li></a>
+                <a href="booking links/ebike.html" target="_blank" rel="noopener noreferrer"><li> E - bike Booking </li></a>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="front-page" id="front">
+    <div class="front-picture" id="front-picture">
+        <img src="pictures/1.png">
+    </div>
+
+    <form action="" class="form">
+        <h1> ONLINE BOOKING</h1>
+        <input type="email" name="email" required class="box" placeholder="Enter Username">
+        <input type="password" name="Passsword" required class="box" placeholder="Enter Password">
+        <input type="submit" value="LOGIN" id="submit">
+        <h6> No account yet? <a href="#"> Sign up</a> </h6>
+    </form>
+</section>
+
+<main>
+    <article>
+        <section class="section-1">
+            <div class="picture-1" id="picture-1">
+                <img src="pictures/section-1.png">
+            </div>
+        </section>
+
+        <section class="container">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="number.text"></div>
+                    <a href="booking links/Car.html" target="_blank" rel="noopener noreferrer"><img src="pictures/2.png" style="width:100%"></a>
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <a href="booking links/motor.html" target="_blank" rel="noopener noreferrer"><img src="pictures/3.png" style="width:100%"></a>
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <a href="booking links/ebike.html" target="_blank" rel="noopener noreferrer"><img src="pictures/4.png" style="width:100%"></a>
+                    <div class="text"></div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+
+        <section class="section-2">
+            <div class="picture-2" id="picture-2">
+                <img src="pictures/section-2.png">
+            </div>
+        </section>
+    </article>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <p>Follow us on social media to get news and special deals from TARAVEL</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/macawili.kevin/" target="_blank" rel="noopener noreferrer"><img src="pictures/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="pictures/twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="pictures/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="pictures/youtube.svg" alt="YouTube"></a>
+            </div>
+            <div class="footer-links">
+                <div class="column">
+                    <h4>Our Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="column">
+                    <h4>Group Sales</h4>
+                    <a href="#">Group Bookings</a>
+                </div>
+                <div class="column">
+                    <h4>Travel Information</h4>
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Travel Advisories</a>
+                    <a href="#">Travel Policies</a>
+                </div>
+                <div class="column">
+                    <h4>Support</h4>
+                    <a href="#">Contact Us</a>
+                    <a href="#">FAQs</a>
+                </div>
+            </div>
+            <p class="copyright">Copyright Statement | Privacy Policy | Terms of Use | Hotline: (02) 8528.7000</p>
+        </div>
+    </footer>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background: url('background\ for\ bookings.png');
+}
+
+/* Background */
+body {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form Container */
+.form-container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid white;
+  text-align: center;
+  position: relative;
+  
+}
+
+/* Header */
+.form-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Overlay Icon */
+.overlay-icon {
+  position: absolute;
+  right: -30px;
+  top: -20px;
+  width: 60px;
+  opacity: 0.8;
+}
+
+/* Form Styles */
+form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: none;
+}
+
+/* Input Fields */
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #003366;
+  background: none;
+  
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-top: 5px;
+  font-size: 14px;
+  background: white;
+}
+
+/* Dropdown Styling */
+select {
+  background: white;
+  cursor: pointer;
+}
+
+/* Button */
+button {
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  background: #0044cc;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #003399;
+}
+
+/* Navbar */
+nav a {
+  font-size: 1.8rem;
+  color: rgb(252, 246, 246);
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+}
+ 
+nav a:hover, nav a.active {
+  color: rgb(7, 7, 7);
+  border-bottom: 3px solid rgba(6, 57, 167, 0.872);
+}
+
+@media (max-width: 995px) {
+  .form{
+    visibility: collapse;
+  }
+  .phonetext{
+    visibility: visible;
+  }
+
+  nav {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 40%;
+      border-left: 3px solid pink;
+      border-bottom: 3px solid pink;
+      border-top-left-radius: 2rem;
+      padding: 1rem;
+      background-color: pink;
+      border-top: 0.1rem solid pink;
+  }
+  nav.active {
+      display: block;
+  }
+
+  nav a {
+      display: block;
+      font-size: 2rem;
+      margin: 3rem 0;
+  }
+
+  nav a:hover, nav a.active {
+      padding: 1rem;
+      border-radius: 0.5rem;
+      border-bottom: 0.5rem solid rgb(230, 15, 234);
+  }
+}
+
+
+header {
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem ;
+  background: linear-gradient(to right, #5a7892, #b0d0e8);
+  filter: drop-shadow(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  z-index: 100;
+  color: white;
+  position:sticky;
+}
+
+nav a{
+  font-size: 20px;
+  color: rgb(254, 244, 244);
+}
+
+/* Navbar drop down*/
+.nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+.nav-item:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: rgba(12, 12, 12, 0.68);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  min-width: 150px;
+}
+
+.dropdown li {
+  padding: 8px;
+}
+
+.dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+.arrow {
+  margin-left: 5px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Booking Form</title>
+    <link rel="stylesheet" href="booking css/Car.css">
+</head>
+
+
+
+<body>
+
+    
+
+    <div class="form-container">
+        <div class="form-header">
+            <h1>CAR</h1>
+            <img src="booking js/Kevin Taravel.svg" alt="Overlay Icon" class="overlay-icon">
+        </div>
+
+        <form id="bookingForm">
+            <div class="input-group">
+                <label for="name">NAME</label>
+                <input type="text" id="name" required>
+                
+                <label for="contact">CONTACT NUMBER</label>
+                <input type="tel" id="contact" required>
+            </div>
+
+            <label for="pickup">PICK-UP LOCATION</label>
+            <input type="text" id="pickup" required>
+
+            <label for="dropoff">DROP-OFF LOCATION</label>
+            <input type="text" id="dropoff" required>
+
+            <label for="seater">SEATER TYPE</label>
+            <select id="seater">
+                <option value="4-seater">4-Seater</option>
+                <option value="6-seater">6-Seater</option>
+                <option value="8-seater">8-Seater</option>
+            </select>
+
+            <label for="notes">NOTE FOR THE RIDER</label>
+            <textarea id="notes" rows="4"></textarea>
+
+            <button type="submit"> Book now</button>
+        </form>
+    </div>
+
+    <script src="booking js/car.js"></script>
+</body>
+
+
+</html>
